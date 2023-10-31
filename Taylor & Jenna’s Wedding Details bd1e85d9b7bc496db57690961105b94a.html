@@ -1,0 +1,682 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Taylor &amp; Jenna’s Wedding Details</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="bd1e85d9-b7bc-496d-b576-90961105b94a" class="page sans"><header><h1 class="page-title"><strong>Taylor &amp; Jenna’s Wedding Details</strong></h1><p class="page-description"></p></header><div class="page-body"><div id="01e9b1f9-9906-495e-9b50-b257a00c25bc" class="column-list"><div id="eb3880fe-6758-4229-8b5b-4fe3e8a76c71" style="width:50%" class="column"><p id="46c6932b-4e0f-47ae-891f-ccf50855c5c3" class=""><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>Venue: </strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>Hope-Wellness Eco-Resort<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong> </strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></p><p id="98a9294d-d83c-4682-b86f-904e3e308d09" class=""><strong>Wedding Date</strong>: Saturday, August 24th, 2024</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1849c751-7cef-494c-a38f-d7670ae57be5"><div style="font-size:1.5em"><span class="icon">❗</span></div><div style="width:100%"><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>Important: </strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>We recommend that you book your lodging closer to the venue, outside of Moncton. The YQM Musical Festival is the same weekend as our Wedding. Therefor, Hotels and Lodging in Moncton will start to fill up quick and the rates will begin to rise. </div></figure><p id="e92c669c-98ef-4e60-aa6a-0846b5063a16" class="">
+</p></div><div id="a6295965-43aa-4de9-b405-c33f163938cc" style="width:50%" class="column"><p id="f0930d4e-6e97-4140-923c-1ae40260da6e" class=""><strong><strong><strong><strong>Distance from Moncton: </strong></strong></strong></strong>31km (30 Mins)</p><figure id="faa7e0f2-dc6a-4b3e-960e-718094b0df74" class="image"><a href="Taylor%20&amp;%20Jenna%E2%80%99s%20Wedding%20Details%20bd1e85d9b7bc496db57690961105b94a/A536AF26-2974-4277-BC06-2B11BFA8C16B.jpeg"><img style="width:1492px" src="Taylor%20&amp;%20Jenna%E2%80%99s%20Wedding%20Details%20bd1e85d9b7bc496db57690961105b94a/A536AF26-2974-4277-BC06-2B11BFA8C16B.jpeg"/></a></figure><p id="9a6d1cd3-b870-40e6-abb2-8da279dcc9c5" class="">3544 Main St, Edgetts Landing, NB E4H 2G9</p></div></div><hr id="3f3dca48-a06d-4efc-93c0-c4cd12ce9c10"/><h1 id="96782ebf-6528-4db6-889d-a7e149d9b30b" class="">Lodging </h1><h2 id="1fda1ab5-3eff-4306-92e0-6e0b404fda54" class="">Fundy Rocks Motel</h2><div id="aeca97de-c2f9-42ce-b13e-3960748f6a38" class="column-list"><div id="a0306920-8976-457b-aff1-d4789e605c1a" style="width:50%" class="column"><p id="f0ad1a9f-f79b-4611-9794-92e9b9ec4346" class=""><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>Room Types: </strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></p><ul id="722e09ee-cc1b-4443-8a06-c87af048d044" class="bulleted-list"><li style="list-style-type:disc">Motel<ul id="a79a09f7-d550-4d2f-bec4-0bb4d2cc1850" class="bulleted-list"><li style="list-style-type:circle">Single Queens</li></ul><ul id="148bb45e-cc3d-4730-9603-29532939dda7" class="bulleted-list"><li style="list-style-type:circle">Double Queens</li></ul><ul id="1e292186-a136-45a6-8840-6f3eafc25304" class="bulleted-list"><li style="list-style-type:circle">Double Queens and Sofa Pullout</li></ul></li></ul><ul id="9ee91549-0c24-45b3-a4d3-6494f8a850af" class="bulleted-list"><li style="list-style-type:disc">Campground (Serviced and Non-Serviced)</li></ul><ul id="7f5e6f4f-225b-410f-b6ce-72838d091a72" class="bulleted-list"><li style="list-style-type:disc">Cabins <ul id="28237a50-dd73-4afb-a913-2b1ddf8b9b66" class="bulleted-list"><li style="list-style-type:circle">1 Bedroom</li></ul><ul id="2ad91a0d-1244-48fc-9f9b-dca76390fc4f" class="bulleted-list"><li style="list-style-type:circle">2 Bedroom</li></ul></li></ul><p id="c37c3312-ac2a-4e21-9e6f-69109e98e213" class=""><strong><strong><strong><strong><strong><strong><strong>Rates Range: </strong></strong></strong></strong></strong></strong></strong></p><p id="bdfbb5e2-3d35-4d6f-ad25-6fb51b65a611" class="">~$115-$195</p><p id="a877fd37-c411-4905-b91c-4a209d6f3c2d" class=""><strong><strong><strong><strong><strong><strong><strong><strong>Booking:</strong></strong></strong></strong></strong></strong></strong></strong></p><p id="64183e2e-c7ad-4db3-b9a1-c76a6b97dc30" class="">Call 1-877-734-1904 now for reservations all year round.</p><p id="197deeec-a1be-4ede-8261-fc143e28c957" class=""><a href="http://www.fundyrocksmotel.com/">http://www.fundyrocksmotel.com/</a></p><p id="bf9d8fd8-85d9-4abf-bec4-aa7446748179" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="339f160c-a730-464d-bb69-e59d42bec53f"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><em><strong>Note: </strong></em><em>We have 12 rooms reserved under “Taylor and Jenna / Devereaux Wedding”. Please don’t request to book under these reserved as we’d like to hold them as long as possible to ensure any guests late to reserve will have space.
+However, If no rooms are left available however, please feel free to use one of the reserved and make sure to let us know. Thank you!</em></div></figure></div><div id="8091bdc0-2042-489e-8e76-cbf207f37e04" style="width:50%" class="column"><p id="ffed2eff-2548-4b68-8e07-3d7534bf45d5" class=""><strong>Distance to Venue: </strong>500 meters</p><figure id="01815255-087f-48f0-a9d6-e1003593115e" class="image"><a href="Taylor%20&amp;%20Jenna%E2%80%99s%20Wedding%20Details%20bd1e85d9b7bc496db57690961105b94a/1FD689AB-CD1C-4BF9-836A-BF369B2A4A0A.jpeg"><img style="width:1125px" src="Taylor%20&amp;%20Jenna%E2%80%99s%20Wedding%20Details%20bd1e85d9b7bc496db57690961105b94a/1FD689AB-CD1C-4BF9-836A-BF369B2A4A0A.jpeg"/></a></figure><p id="9f5df1e4-e27f-4ecf-a169-2981837f388a" class="">3471 Route 114, Hopewell Cape, NB, E4H 2G5</p></div></div><hr id="a89fb517-39d6-4c1a-bd54-cd13252a65d9"/><h2 id="d13a8380-f34b-4c68-abb6-00456e16fff3" class="">Hopewell Rocks Motel </h2><div id="795c71ab-55bc-4766-8b13-fe32f269ff11" class="column-list"><div id="15c89d4e-daed-4192-85d9-b6c55ac3bcc8" style="width:50%" class="column"><p id="3ca8df20-9d44-4e6b-89f1-527919ff40f1" class=""><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>Room Types:</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></p><ul id="f59d57fc-cce1-479a-9a1f-afd0e46b0e4b" class="bulleted-list"><li style="list-style-type:disc">Single Queen</li></ul><ul id="128ba2b8-744e-4463-bec9-0920a29813ee" class="bulleted-list"><li style="list-style-type:disc">Two Double</li></ul><ul id="3d59c78a-fa09-4095-9e42-e43991fe864f" class="bulleted-list"><li style="list-style-type:disc">Two Queen</li></ul><ul id="9399f0ab-b5d1-4893-9900-96199cd720e4" class="bulleted-list"><li style="list-style-type:disc">Two Queen and Sofa Pullout</li></ul><p id="115dc942-1a10-487d-85fa-daad533b354a" class=""><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>Rates Range:</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></p><p id="55738794-ef5b-4981-9cf9-2859c79a255d" class="">~$130-$175</p><p id="0da13e51-f090-4b08-8448-44be84b03690" class=""><strong><strong><strong><strong><strong><strong><strong><strong>Booking:</strong></strong></strong></strong></strong></strong></strong></strong></p><p id="644814fc-a812-4c1c-b92c-9f02f343ea13" class=""><a href="http://www.hopewellrocksmotel.ca/">http://www.hopewellrocksmotel.ca/</a></p><p id="c5873eb1-b14b-4172-ad25-7b0fee91a547" class="">(506) 734-2975</p></div><div id="54c3ba72-2a47-4622-a110-651876298e68" style="width:50%" class="column"><p id="7333d56e-a1ad-4c0e-867f-66ea37080ee4" class=""><strong><strong><strong><strong>Distance to Venue: </strong></strong></strong></strong>6km</p><figure id="0e1feabe-583c-4b06-b4b6-4955fd30300c" class="image"><a href="Taylor%20&amp;%20Jenna%E2%80%99s%20Wedding%20Details%20bd1e85d9b7bc496db57690961105b94a/49C5ABC5-9D3F-47E3-B992-88A46A81986E.jpeg"><img style="width:1125px" src="Taylor%20&amp;%20Jenna%E2%80%99s%20Wedding%20Details%20bd1e85d9b7bc496db57690961105b94a/49C5ABC5-9D3F-47E3-B992-88A46A81986E.jpeg"/></a></figure><p id="74e5d3cc-f60c-45a0-a0cc-5b8d9140aef0" class="">4135 Route 114 Hopewell Cape NB E4H 3J4</p></div></div><hr id="c4c5e40a-bef7-4c25-9689-43c72f260359"/><h2 id="909c5152-80d8-4fbf-adcd-7cfcaaa32df4" class="">AirBnB</h2><div id="c2d3f4c7-4c8e-4a1f-ab67-ada9c50a44b5" class="column-list"><div id="a1cc4271-146e-4a49-a445-eea81cae85a5" style="width:50%" class="column"><p id="f36f93ac-8568-4a38-a71d-4be58fd64392" class=""><a href="https://www.airbnb.ca/s/Hillsborough--New-Brunswick--Canada/homes?tab_id=home_tab&amp;refinement_paths%5B%5D=%2Fhomes&amp;flexible_trip_lengths%5B%5D=one_week&amp;monthly_start_date=2023-11-01&amp;monthly_length=3&amp;price_filter_input_type=0&amp;price_filter_num_nights=3&amp;channel=EXPLORE&amp;query=Hillsborough%2C%20NB&amp;place_id=ChIJvRUUA6yuoEwR7ZJnpnFbzhM&amp;date_picker_type=calendar&amp;checkin=2024-08-23&amp;checkout=2024-08-26&amp;source=structured_search_input_header&amp;search_type=user_map_move&amp;ne_lat=45.97848313656009&amp;ne_lng=-64.56761169580193&amp;sw_lat=45.78645077698237&amp;sw_lng=-64.69151398179409&amp;zoom=12.455772018687759&amp;zoom_level=12.455772018687759&amp;search_by_map=true">Airbnb | Hillsborough – Vacation Rentals &amp; Places to Stay - New Brunswick</a></p><p id="f0938ea5-2964-4288-b0ec-9b6073d3c60f" class="">
+</p><p id="be12bdf3-848b-4d78-afd0-687ba15678ce" class="">There are a few AirBnbs around as well that can be booked. Take a look at the link above.</p><p id="c1d12637-b367-454d-bf7a-8e874597cd92" class="">
+</p></div><div id="74bd3407-b112-448d-8d41-6e9164661e55" style="width:50%" class="column"><p id="1710579a-7a54-426d-a0c7-04fe9332395c" class="">
+</p></div></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
